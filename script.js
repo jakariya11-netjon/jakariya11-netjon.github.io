@@ -1,8 +1,3 @@
-// ================================
-// Jakariya Ahmed Portfolio
-// ================================
-
-
 // Current Year
 
 const year = document.getElementById("year");
@@ -12,7 +7,7 @@ if (year) {
 }
 
 
-// Project Counter
+// Project Count
 
 const projectCount = document.getElementById("projectCount");
 
@@ -21,7 +16,7 @@ if (projectCount) {
 }
 
 
-// Smooth navigation
+// Smooth Scroll
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
 
@@ -46,8 +41,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
-// Small console message
-
 console.log(
-    "🚀 Welcome to Jakariya Ahmed's Portfolio!"
+    "🚀 Welcome to Jakariya Ahmed's Website!"
 );
