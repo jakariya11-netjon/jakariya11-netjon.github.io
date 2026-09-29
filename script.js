@@ -1,62 +1,53 @@
 // ================================
-// Jakariya Ahmed - Website Hub
+// Jakariya Ahmed Portfolio
 // ================================
 
-// Current year
-document.getElementById("year").textContent = new Date().getFullYear();
 
+// Current Year
 
-// ================================
-// Project Counter
-// ================================
+const year = document.getElementById("year");
 
-const cards = document.querySelectorAll(".card");
-const projectCount = document.getElementById("projectCount");
-
-if (projectCount) {
-    projectCount.textContent =
-        `${cards.length} Project${cards.length === 1 ? "" : "s"}`;
+if (year) {
+    year.textContent = new Date().getFullYear();
 }
 
 
-// ================================
-// Card Click Animation
-// ================================
+// Project Counter
 
-cards.forEach((card) => {
+const projectCount = document.getElementById("projectCount");
 
-    card.addEventListener("click", () => {
+if (projectCount) {
+    projectCount.textContent = "5+";
+}
 
-        card.style.transform = "translateY(-2px)";
 
-        setTimeout(() => {
-            card.style.transform = "";
-        }, 150);
+// Smooth navigation
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function (e) {
+
+        const target = document.querySelector(
+            this.getAttribute("href")
+        );
+
+        if (target) {
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
 
     });
 
 });
 
 
-// ================================
-// Page Loaded
-// ================================
-
-window.addEventListener("load", () => {
-
-    document.body.classList.add("loaded");
-
-});
-
-
-// ================================
-// Console Message
-// ================================
+// Small console message
 
 console.log(
-    "🚀 Welcome to Jakariya Ahmed's Website Hub!"
-);
-
-console.log(
-    `📂 Total Projects: ${cards.length}`
+    "🚀 Welcome to Jakariya Ahmed's Portfolio!"
 );
