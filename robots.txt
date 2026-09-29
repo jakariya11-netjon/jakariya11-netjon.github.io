@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jakariya11-netjon.github.io/YOUR-REPOSITORY-NAME/sitemap.xml
+Sitemap: https://jakariya11-netjon.github.io/sitemap.xml
